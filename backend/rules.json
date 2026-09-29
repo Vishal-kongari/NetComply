@@ -1,0 +1,46 @@
+{
+    "frameworks": {
+        "CIS": [
+            {
+                "id": "CIS-NET-001",
+                "title": "Use SSH Version 2",
+                "parameter": "ssh.version",
+                "operator": "equals",
+                "expected": 2,
+                "severity": "HIGH"
+            },
+            {
+                "id": "CIS-NET-002",
+                "title": "Disable Telnet",
+                "parameter": "telnet.enabled",
+                "operator": "equals",
+                "expected": false,
+                "severity": "CRITICAL"
+            },
+            {
+                "id": "CIS-NET-003",
+                "title": "Disable HTTP Management",
+                "parameter": "http.enabled",
+                "operator": "equals",
+                "expected": false,
+                "severity": "HIGH"
+            },
+            {
+                "id": "CIS-NET-004",
+                "title": "Enable Centralized Logging",
+                "parameter": "logging.enabled",
+                "operator": "equals",
+                "expected": true,
+                "severity": "MEDIUM"
+            },
+            {
+                "id": "CIS-NET-005",
+                "title": "Enable NTP",
+                "parameter": "ntp.enabled",
+                "operator": "equals",
+                "expected": true,
+                "severity": "MEDIUM"
+            }
+        ]
+    }
+}
